@@ -1,5 +1,8 @@
-<h1>Sporting Events</h1>
+<h1><center>Sporting Events</center></h1>
+
+<%= link_to 'show all events', events_path %>
+<%= link_to "New Event", new_event_path %>
 
 <% @events.each do |event| %>
-<ul><%= event.name %></ul>
+  <ul><center><%= 'single_event', event: event %></center></ul>
 <%end%>
