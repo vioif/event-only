@@ -4,5 +4,5 @@
 <%= link_to "New Event", new_event_path %>
 
 <% @events.each do |event| %>
-  <ul><center><%= 'single_event', event: event %></center></ul>
+  <%= render 'single_event', event: event %>
 <%end%>
